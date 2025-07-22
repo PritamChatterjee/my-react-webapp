@@ -1,0 +1,93 @@
+react hooks
+------------
+    v16.8 
+        - allow function components to have access to state
+        and other react features (without class)
+        - that is function, which hook into react state 
+        - it cannot be used in class components
+
+            - useState()
+            - useEffect()
+            - useContext()
+            - useRef()
+
+    rules:
+        only call hooks at top level:
+            - cannot /dont call hooks inside loops, conditions or nested functions
+        onlu call hooks from react functions:
+            call hooks from react functional components
+            not from regular js functions
+        
+        useStae:
+            add state variables to functional components
+        useEffect:
+            performs side effects in functional components such as
+                    - fetching
+                    - subscribinh
+                    - manipulate DOM 
+        useContext:
+            access the context object in functional components
+            allow data to be passed from down component tree without 
+                prop drilling
+        useRef:
+            create a mutable object (ref) that persists across component rendors
+            useful for accessing DOM elements directly
+
+React Router
+------------
+    - to manage routing and navigateion in react applications
+    navigateion between components
+
+    * client  side routing:
+        routing entirely in client side
+            brower's URL changes but the entire page content is dynamically
+                updated by React - 
+    * dynamic routing:
+         - creation of dynamic routes
+            - map various url path
+            - including  url parameter
+    
+    concepts:
+        BrowserRouter
+        Routes
+        Route
+        Link/ NavLink
+        useNavigate
+        useParams
+
+Add React Router into the project
+-----------------------------
+    npm install -D react-router-dom
+
+
+main.jsx
+---------
+    define the routes
+    export default function MenuLink()
+{
+  return(
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Attributes/>}></Route>
+        <Route path='funcomp' element={<MyFunComp/>}></Route>
+        <Route path='classcomp' element={<MyClassCompoent/>}></Route>
+        <Route path='login' element={<Login/>}></Route>
+        <Route path='states' element={<ReactState/>}></Route>
+
+      </Routes>
+    </BrowserRouter>
+  )
+}
+
+
+create a new layout.jsx and and links
+
+
+API in React
+------------
+    axios -- access the remote web server - REST API
+
+    npm install axios
+
+    create a componet to fetch data from API
+    

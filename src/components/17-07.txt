@@ -1,0 +1,31 @@
+React State
+-----------
+    - JS object. contains the data about  components
+    - built-in state object
+    that is : store the prop values of the components
+    - when  state changes, the component will be re-render
+    - also called: stateful component
+
+    - it is heart of react components, determines how the component behavior & how it will be render
+    - it makes the components as dynamic & interactive
+
+    ** it can be class component
+
+    eg:
+        state = {variable : value};
+
+        setState()  -- assign values into the state object
+    
+    : state can be modified based on user action 
+    : if changes, component will re-render
+    : state obj initialized constructor
+    : it can store multiple properties
+
+React Forms
+-----------
+    - allow users to interact with the application
+    - also gather information from the users
+    - react offers stateful, reactive approach to build form
+    - when click submtit button, data is saved into the state 
+    - takes vakyes through props
+    
