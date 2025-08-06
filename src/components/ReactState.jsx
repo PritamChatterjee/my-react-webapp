@@ -1,34 +1,54 @@
+// Import the React library, which is required to create React components
 import React from "react";
+
+// Import a custom Layout component from a file named 'Layout' in the same directory
 import Layout from "./Layout";
 
-class ReactState extends React.Component
-{
-    constructor()
-    {
-        super();        //base  class constructor 
-        this.state = {display:false};   // initialize the state object
-        this.toggleDisplay = this.toggleDisplay.bind(this);     // events
-    }
+// Define a class-based React component named ReactState that extends React.Component
+class ReactState extends React.Component {
+  // Constructor method to initialize the component's state and bind methods
+  constructor() {
+    // Call the parent class (React.Component) constructor
+    super();
+    // Initialize the component's state with a display property set to false
+    this.state = { display: false };
+    // Bind the toggleDisplay method to the component instance to ensure 'this' refers to the component
+    this.toggleDisplay = this.toggleDisplay.bind(this);
+  }
 
-    toggleDisplay()
-    {
-        this.setState({display:!this.state.display});
-    }
-    render()
-    {
-        return(
+  // Method to toggle the display state between true and false
+  toggleDisplay() {
+    // Update the state by setting display to the opposite of its current value
+    this.setState({ display: !this.state.display });
+  }
+
+  // Render method to define the component's UI
+  render() {
+    // Return JSX that describes the component's UI
+    return (
+      // A div element serves as the root container for the component's content
+      <div>
+        // Render the Layout component, likely providing a consistent structure or styling
+        <Layout></Layout>
+        // A heading level 2 (h2) element displaying "React State"
+        <h2>React State </h2>
+        // A ternary operator to conditionally render content based on the display state
+        {
+          this.state.display ? (
+            // If display is true, render a div containing a paragraph and a button
             <div>
-                <Layout></Layout>
-                 <h2>React State </h2>
-            {
-                this.state.display?(
-                    <div>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus alias molestiae ad accusamus pariatur consequuntur ea dolor, excepturi saepe unde, itaque ipsam eveniet explicabo perferendis aliquid consectetur? Ea, temporibus nihil?
-                        </p>
-                        <br></br>
-                        <button onClick={this.toggleDisplay} className="btn btn-primary">Show More</button>
-                    </div>
+              {/* // A paragraph element containing placeholder text (Lorem ipsum) */}
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus alias molestiae ad accusamus pariatur consequuntur ea dolor, excepturi saepe unde, itaque ipsam eveniet explicabo perferendis aliquid consectetur? Ea, temporibus nihil?
+              </p>
+              {/* A line break element for spacing */}
+              <br></br>
+              {/* A button with an onClick event bound to toggleDisplay and Bootstrap classes for styling */}
+              <button onClick={this.toggleDisplay} className="btn btn-primary">
+                Show More
+              </button>
+            </div>
+          // If display is false, no closing tag or content is provided (incomplete ternary)
 
                 ):(
                     <div>

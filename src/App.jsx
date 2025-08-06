@@ -4,6 +4,7 @@ import './App.css'
 function App() {
 
   return (
+    // it will return whatever is written
     <>
       
       <h1>Welcome to ReactJS world</h1>
