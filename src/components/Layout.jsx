@@ -5,9 +5,8 @@ const Layout = () =>{
         <>
         <nav className="navbar navbar-expand-lg bg-primary">
             <ul className="navbar-nav">
-                <li className="nav-item">
-                    <Link to="/" className="nav-link text-white">Home</Link>
-                    {/* <a href="url">Text</a> */}
+                {/* <li className="nav-item">
+                  <Link to="/" className="nav-link text-white">Home</Link>
                 </li>
                 <li className="nav-item">
                     <Link to="/funcomp" className="nav-link text-white">Function Component</Link>
@@ -21,18 +20,16 @@ const Layout = () =>{
                 <li className="nav-item">
                     <Link to="/states" className="nav-link text-white">React State</Link>
                 </li>
-               
+               */}
                   <li className="nav-item">
                     <Link className="nav-link text-white" to="/employee"> EmployeeList</Link>
 
-                </li>
+                </li> 
 
                   <li className="nav-item">
                     <Link className="nav-link text-white" to="/add-employee">add-employee</Link>
 
-                </li>
-
-                 
+                </li>                
 
                   <li className="nav-item">
                     <Link className="nav-link text-white" to="/delete-employee"> Delete Emp</Link>

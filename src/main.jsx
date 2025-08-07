@@ -28,6 +28,7 @@ import ClassComp from './components/ClassComp.jsx';
 import PropsDemo1 from './components/PropsDemo.jsx';
 import StateDemo from './components/StateDemo.jsx';
 import InjectData from './components/InjectData.jsx';
+import CreatePost from './components/CreatePost.jsx';
 
 
 
@@ -42,7 +43,7 @@ export default function MenuLink()
         <Route path='login' element={<Login/>}></Route>
         <Route path='states' element={<ReactState/>}></Route>
         <Route path='api' element={<FetchData></FetchData>}></Route>
-         <Route path="/add-employee" element={<EmployeeForm />} />
+        <Route path="/add-employee" element={<EmployeeForm />} />
         <Route path="/update-employee/:id" element={<UpdateEmployee />} />
         <Route path="/delete-employee" element={<DeleteEmployeeById />} />
         <Route path="/employee" element={<EmployeeList />} />
@@ -65,11 +66,15 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <MenuLink></MenuLink> */}
   <>
-   <Loop> </Loop>
-   <ClassComp></ClassComp>
-    <PropsDemo1 message="Welcome to React!" coursename="React Basics"></PropsDemo1>
-   <StateDemo message="hello"></StateDemo>
-   <InjectData></InjectData>
+  {/* <FetchData></FetchData>
+    <Loop> </Loop>
+    <ClassComp></ClassComp>
+     <PropsDemo1 message="Welcome to React!" coursename="React Basics"></PropsDemo1>
+    <StateDemo message="hello"></StateDemo>*/}
+    <InjectData></InjectData> 
+  
+    {/* <Layout></Layout> */}
   </>
+  {/* <CreatePost/> */}
   </StrictMode>
 )

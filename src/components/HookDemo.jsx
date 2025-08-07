@@ -1,4 +1,12 @@
 import React, { useState } from "react";
+// react hooks are functions that let you use state and other React features in functional components.
+// They allow you to manage state, lifecycle methods, and side effects in a more concise and readable way.
+// Hooks were introduced in React 16.8 to enable stateful logic in functional components.
+// Hooks are a way to use React features without writing class components.
+// They provide a more functional approach to building components, making it easier to share logic 
+// between components.
+// Hooks are a powerful feature in React that simplifies state management and enhances code reusability.
+// Hooks allow you to write cleaner and more maintainable code by separating concerns and avoiding complex class hierarchies.
 // useState is a React Hook that lets you add state to functional components.
 // It allows you to declare state variables in functional components, which were previously only possible in class components.
 // useState returns an array with two elements: the current state value and a function to update it.
@@ -13,7 +21,8 @@ function HookDemo()
 {
   // useState is a hook that allows you to add state to functional components in React.
   // It returns an array with two elements: the current state value and a function to update it.
-  // The initial state can be set by passing a value to useState, and the state can be updated by calling the update function.
+  // The initial state can be set by passing a value to useState, and the state can be 
+  // updated by calling the update function.
   // Here, we are initializing a state variable 'click' with an initial value of 0.
   // The 'setClick' function is used to update the 'click' state variable.
   // This allows us to keep track of how many times the button has been clicked.

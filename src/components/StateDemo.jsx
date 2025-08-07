@@ -39,7 +39,8 @@ export class StateDemo extends Component {
         <p>State is local to the component and cannot be accessed by other components directly.</p>
         <p>To update the state, you can use the following method:</p>
         
-        <button onClick={() => this.setState({ message: 'State has been updated!' })} className="btn btn-primary">Update State</button>
+        <button onClick={() => this.setState({ message: 'State has been updated!' })} 
+        className="btn btn-primary">Update State</button>
         
         <p>After clicking the button, the message will change to: {this.state.message}</p>
         <p>Understanding state is crucial for building interactive applications in React.</p>
